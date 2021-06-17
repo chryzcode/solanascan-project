@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.search{
+  margin-left: 340px;
+  margin-top: 50px;
+  outline: none;
+  border-radius:4px;
+  margin-right: 300px;
+}
+
+.search-bar{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #e78deb;
+  outline: none;
+  float: left;
+  background: #f1f1f1;
+  width:600px;
+  height: 45px;
+  font-size: 17px;
+  border-radius:20px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+i {
+  color: blue;
+  border-left: none;
+  cursor: pointer;
+}
+
+button{
+  border-radius:80px;
+  height:50px;
+  width:50px;
+  outline: none;
+  border: 1px solid #e78deb;
+}
+
+from.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+
+<form class="search">
+  <input class="search-bar" type="text" placeholder="Search.." name="search">
+  <button name="button"><i class="fa fa-search"></i></button>
+</form>
+
+
+</body>
+</html>

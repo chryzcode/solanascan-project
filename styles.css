@@ -10,6 +10,11 @@ body{
 }
 
 .search{
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar{
   width: 600px;
   height: 45px;
   font-size: 17px;
@@ -17,19 +22,23 @@ body{
   border: 1px solid #e78deb;
   outline: none;
   padding: 10px;
-  display: block;
   margin: 0 auto;
+  display: block;
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.search:hover{
+.search-bar:hover{
   box-shadow: 2px 2px 0.5px grey;
   font-size: 18px;
 }
 
-.search:active{
+.search-bar:active{
   box-shadow: none;
   font-size: 17px;
 }
+
 
 .none{
   border: none;
@@ -154,11 +163,11 @@ body{
 @media only screen and  (max-width: 780px){
 
   .about-app{
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .about-app:hover{
-    font-size: 20px;
+    font-size: 18px;
   }
 
 }
@@ -170,7 +179,7 @@ body{
   }
 
   .about-app:hover{
-    font-size: 18.5px;
+    font-size: 17.7px;
   }
 
 }
@@ -187,7 +196,7 @@ body{
   }
 
   .about-app{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .about-app:hover{
@@ -205,6 +214,7 @@ body{
 
   .d-apps-active:hover{
     height: 265px;
+    font-size: 17.6
   }
 
 }
