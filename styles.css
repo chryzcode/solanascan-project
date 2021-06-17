@@ -33,16 +33,12 @@ body{
   border-radius: 15px;
 }
 
-.d-apps:hover{
-  background: #adaca8;
-}
-
-
 .d-apps-active{
   height: 200px;
   padding: 15px;
   border-radius: 15px;
   border: 1px solid #e78deb;
+  box-shadow: 7px 7px 2.5px grey;
 
 }
 
