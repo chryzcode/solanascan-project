@@ -192,6 +192,10 @@ form.search::after {
     font-size: 19px;
   }
 
+  .search{
+    margin-left: 200px;
+    margin-right: 300px;
+
 }
 
 @media only screen and  (max-width: 780px){
@@ -272,4 +276,46 @@ form.search::after {
     height: 205px;
     padding: 13px;
   }
+
+  .search{
+    margin-left: 90px;
+    margin-right: 10px;
+  }
+
+  .search-bar{
+    padding: 3px;
+    float: left;
+    width:250px;
+    height: 45px;
+    font-size: 13px;
+    border-radius:20px;
+  }
+
+  .search-bar:active{
+    font-size: 13.5px;
+  }
+
+  .search-bar:hover{
+    font-size: 13.5px;
+    box-shadow: none;
+  }
+  button{
+    border-radius:80px;
+    height:45px;
+    width:45px;
+    outline: none;
+    border: 1px solid #e78deb;
+    font-size: 13px;
+    background: white;
+  }
+
+  button:hover{
+    box-shadow: 1px 1px 0.5px grey;
+    font-size: 14.5px;
+  }
+
+  button:active{
+    box-shadow: none;
+  }
+
 }
