@@ -38,14 +38,13 @@ body{
   padding: 15px;
   border-radius: 15px;
   border: 1px solid #e78deb;
-  box-shadow: 7px 7px 2.5px grey;
-
 }
 
 .d-apps-active:hover{
   background: #e8e8e8;
   height: 215px;
   cursor: pointer;
+  box-shadow: 6px 6px 2.5px grey;
 }
 
 
