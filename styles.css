@@ -10,20 +10,23 @@ body{
 }
 
 .search{
-  display: block;
-  margin: 0 auto;
+  margin-left: 340px;
+  margin-top: 50px;
+  outline: none;
+  border-radius:4px;
+  margin-right: 300px;
 }
 
 .search-bar{
-  width: 600px;
-  height: 45px;
+  padding: 10px;
   font-size: 17px;
-  border-radius: 15px;
   border: 1px solid #e78deb;
   outline: none;
-  padding: 10px;
-  margin: 0 auto;
-  display: block;
+  float: left;
+  width:600px;
+  height: 45px;
+  font-size: 17px;
+  border-radius:20px;
   content: "";
   clear: both;
   display: table;
@@ -37,6 +40,37 @@ body{
 .search-bar:active{
   box-shadow: none;
   font-size: 17px;
+}
+
+i {
+  color: blue;
+  border-left: none;
+  cursor: pointer;
+}
+
+button{
+  border-radius:80px;
+  height:50px;
+  width:50px;
+  outline: none;
+  border: 1px solid #e78deb;
+  font-size: 17px;
+  background: white;
+}
+
+button:hover{
+  box-shadow: 1px 1px 0.5px grey;
+  font-size: 18px;
+}
+
+button:active{
+  box-shadow: none;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 

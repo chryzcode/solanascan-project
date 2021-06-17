@@ -33,6 +33,15 @@
   display: table;
 }
 
+.search-bar:hover{
+  box-shadow: 2px 2px 0.5px grey;
+  font-size: 18px;
+}
+
+.search-bar:active{
+  box-shadow: none;
+  font-size: 17px;
+}
 
 i {
   color: blue;
@@ -46,9 +55,19 @@ button{
   width:50px;
   outline: none;
   border: 1px solid #e78deb;
+  font-size: 17px;
 }
 
-from.search::after {
+button:hover{
+  box-shadow: 1px 1px 0.5px grey;
+  font-size: 18px;
+}
+
+button:active{
+  box-shadow: none;
+}
+
+form.search::after {
   content: "";
   clear: both;
   display: table;
@@ -59,7 +78,7 @@ from.search::after {
 <body>
 
 <form class="search">
-  <input class="search-bar" type="text" placeholder="Search.." name="search">
+  <input class="search-bar" type="text" placeholder="Search through using Dapps name" name="search">
   <button name="button"><i class="fa fa-search"></i></button>
 </form>
 
