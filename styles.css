@@ -9,6 +9,28 @@ body{
   background: white ;
 }
 
+.search{
+  width: 600px;
+  height: 45px;
+  font-size: 17px;
+  border-radius: 15px;
+  border: 1px solid #e78deb;
+  outline: none;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search:hover{
+  box-shadow: 2px 2px 0.5px grey;
+  font-size: 18px;
+}
+
+.search:active{
+  box-shadow: none;
+  font-size: 17px;
+}
+
 .none{
   border: none;
   padding: none;
@@ -47,6 +69,10 @@ body{
   box-shadow: 4px 4px .5px grey;
 }
 
+.d-apps-active:active{
+  background: white;
+  box-shadow: none;
+}
 
 .app-logo{
 
@@ -75,7 +101,7 @@ body{
 
 
 .about-app{
-  font-size: 18px;
+  font-size: 17px;
   margin: 13px;
   align-items: center;
   justify-content: center;
@@ -84,7 +110,7 @@ body{
 }
 
 .about-app:hover{
-  font-size: 20px;
+  font-size: 18px;
   cursor: default;
 }
 
@@ -101,7 +127,7 @@ body{
   cursor: default;
 }
 
-@media only screen and  (max-width: 950px){
+@media only screen and  (max-width: 985px){
 
   .wrapper{
     grid-template-columns: 1fr 1fr;
@@ -116,11 +142,11 @@ body{
   }
 
   .about-app{
-    font-size: 20px;
+    font-size: 18.5px;
   }
 
   .about-app:hover{
-    font-size: 22px;
+    font-size: 19px;
   }
 
 }
@@ -137,6 +163,18 @@ body{
 
 }
 
+@media only screen and  (max-width: 740px){
+
+  .about-app{
+    font-size: 17px;
+  }
+
+  .about-app:hover{
+    font-size: 18.5px;
+  }
+
+}
+
 @media only screen and  (max-width: 700px){
 
   .d-apps-active{
@@ -146,6 +184,14 @@ body{
 
   .d-apps-active:hover{
     height: 240px;
+  }
+
+  .about-app{
+    font-size: 16px;
+  }
+
+  .about-app:hover{
+    font-size: 18px;
   }
 
 }
