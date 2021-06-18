@@ -81,10 +81,11 @@ form.search::after {
 }
 
 .d-apps-active:hover{
-  background: #e8e8e8;
+  background: #e3e3e3;
   height: 215px;
   cursor: pointer;
-  box-shadow: 4px 4px .5px grey;
+  box-shadow: 0 0 5px #b58ebf,
+              0 0 5px #e8e8e8;
 }
 
 .d-apps-active:active{
