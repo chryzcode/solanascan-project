@@ -12,9 +12,8 @@ body{
 .search-container{
   height: 180px;
   width: 100%;
-  background: linear-gradient(45deg, #8a074d, #f261ae, #c71e78,  #f257aa, #8a074d);
+  background: linear-gradient(45deg, #8a074d, #c71e78, #8a074d);
   opacity: 60%;
-
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -25,4 +24,91 @@ body{
   padding-top: 25px;
   padding-left: 10px;
   font-family: Helvetica;
+}
+
+.search-container .input{
+  border: 0px;
+  outline: none;
+}
+
+.search-wrap{
+  width: 500px;
+  margin: 30px auto;
+}
+
+.search-wrap .search-box{
+  position: relative;
+  width: 500px;
+  height: 60px;
+}
+
+.search-wrap .search-box .input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding-right: 80px;
+}
+
+.search-wrap .search-box .input:hover{
+  box-shadow: 2px 2px 0.5px #a440a8;
+  font-size: 19px;
+}
+
+.search-wrap .search-box .input:active{
+  box-shadow: none;
+  font-size: 18px;
+}
+
+form .search::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button {
+  border: 0px;
+  outline: none;
+}
+
+.search-wrap .search-box .btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 80%;
+  background: #f27ef7;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.search-wrap .search-box .btn:hover{
+  background: #f350fa;
+}
+
+.search-wrap .search-box .btn.btn_common .fas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+.search-wrap .search-box .btn.btn_common .fas:hover{
+  font-size: 23px;
+}
+
+.search-wrap .search-box .btn.btn_common .fas:active{
+  font-size: 21.5px;
+}
+
+.search-wrap .search-box .btn{
+  right: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
