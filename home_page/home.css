@@ -12,8 +12,11 @@ body{
 .search-container{
   height: 180px;
   width: 100%;
-  background: linear-gradient(45deg, #ff0a70, #5773ff);
+  background: linear-gradient(45deg, #8a074d, #f261ae, #c71e78,  #f257aa, #8a074d);
   opacity: 60%;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .info{

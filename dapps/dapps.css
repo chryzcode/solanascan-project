@@ -9,6 +9,10 @@ body{
   background: white ;
 }
 
+.all{
+  background: #f1f1f1;;
+}
+
 .search{
   margin-left: 330px;
   margin-top: 50px;
@@ -67,6 +71,7 @@ form.search::after {
   margin: 10px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 98%;
   padding: 10px;
   grid-column-gap: 10px;
   grid-row-gap: 20px;
@@ -75,13 +80,14 @@ form.search::after {
 
 .d-apps-active{
   height: 200px;
-  padding: 15px;
-  border-radius: 15px;
-  border: 1px solid #e78deb;
+  padding: 15px ;
+  border-radius: 10px;
+  border: 2px solid #e78deb;
+  background: #f8f9fa;
 }
 
 .d-apps-active:hover{
-  background: #e3e3e3;
+  background: white;
   height: 215px;
   cursor: pointer;
   box-shadow: 0 0 5px #b58ebf,
@@ -120,7 +126,7 @@ form.search::after {
 
 
 .about-app{
-  font-size: 17px;
+  font-size: 20px;
   margin: 13px;
   align-items: center;
   justify-content: center;
@@ -129,7 +135,7 @@ form.search::after {
 }
 
 .about-app:hover{
-  font-size: 18px;
+  font-size: 21px;
   cursor: default;
 }
 
@@ -144,6 +150,18 @@ form.search::after {
   height: 100%;
   width: 100%;
   cursor: default;
+}
+
+@media only screen and  (max-width: 1080px){
+
+
+  .about-app{
+    font-size: 18px;
+  }
+
+  .about-app:hover{
+    font-size: 18.5px;
+  }
 }
 
 @media only screen and  (max-width: 985px){
