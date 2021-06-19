@@ -1,0 +1,25 @@
+*{
+  padding: none;
+  margin: none;
+  font-family: serif monospace sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+}
+
+.search-container{
+  height: 180px;
+  width: 100%;
+  background: linear-gradient(45deg, #ff0a70, #5773ff);
+  opacity: 60%;
+}
+
+.info{
+  font-size: 21px;
+  color: #000000;
+  padding-top: 25px;
+  padding-left: 10px;
+  font-family: Helvetica;
+}
