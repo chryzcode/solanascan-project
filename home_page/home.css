@@ -154,25 +154,36 @@ button {
   }
 }
 
-@media all and (min-width: 400px) and (max-width: 761px) {
+@media all and (min-width: 600px) and (max-width: 761px) {
 
   .info{
     padding-left: 0;
   }
 
   .search-container{
-    width: 650px;
     border-radius: 0;
   }
 
   .search-wrap{
-    width: 600px;
+    width: 550px;
   }
 
   .search-wrap .search-box{
     position: relative;
     width: 600px;
-    height: 62px;
+    height: 66px;
+  }
+}
 
+@media all and (min-width: 450px) {
 
+  .search-wrap{
+    width: 400px;
+  }
+
+  .search-wrap .search-box{
+    position: relative;
+    width: 400px;
+    height: 60px;
+  }
 }
