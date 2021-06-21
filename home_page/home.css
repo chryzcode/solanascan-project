@@ -172,16 +172,3 @@ button {
     height: 66px;
   }
 }
-
-@media all and (min-width: 450px) {
-
-  .search-wrap{
-    width: 400px;
-  }
-
-  .search-wrap .search-box{
-    position: relative;
-    width: 400px;
-    height: 60px;
-  }
-}
