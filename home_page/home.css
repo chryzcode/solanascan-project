@@ -12,7 +12,7 @@ body{
 .search-container{
   height: 180px;
   width: 100%;
-  background: linear-gradient(45deg, #8a074d, #c71e78, #8a074d);
+
   opacity: 60%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -24,12 +24,12 @@ body{
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 10px;
-  font-family: Helvetica;
-  height: 10px;
+  font-family: 'Montserrat';
+  height: 10px
 }
 
 .search-container .input{
-  border: 0px;
+  border: 1px solid #a440a8;;
   outline: none;
 }
 
@@ -58,12 +58,10 @@ body{
 }
 
 .search-wrap .search-box .input:hover{
-  box-shadow: 2px 2px 0.5px #a440a8;
   font-size: 19px;
 }
 
 .search-wrap .search-box .input:active{
-  box-shadow: none;
   font-size: 18px;
 }
 
@@ -84,13 +82,13 @@ button {
   right: 0;
   width: 60px;
   height: 80%;
-  background: #f27ef7;
+  background: #701822;
   z-index: 1;
   cursor: pointer;
 }
 
 .search-wrap .search-box .btn:hover{
-  background: #f350fa;
+  background: #a33c49;
 }
 
 .search-wrap .search-box .btn.btn_common .fas{

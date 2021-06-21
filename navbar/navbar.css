@@ -24,7 +24,7 @@ nav:after{
 }
 
 img{
-  padding-left: 20px;
+  padding-left: 60px;
   line-height: 70px;
   float: left;
   padding-top: 19px;
@@ -45,31 +45,29 @@ img{
 
 nav ul{
   float: right;
+  padding-right: 60px;
 }
 
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 nav ul li a{
   text-decoration: none;
   color: black;
-  font-size: 23px;
-  padding: 7px 13px;
+  font-size: 18px;
   border-radius: 5px
 }
 
 nav ul li a:hover{
-  color: #e78deb;
-  font-size: 23.5px;
-  box-shadow: 0 0 5px #b58ebf,
-              0 0 5px #e8e8e8;
+  color: #701822;
+  font-size: 18.5px;
 }
 
 nav ul li a:active{
-  font-size: 23px;
+  font-size: 19px;
 }
 
 
@@ -111,26 +109,28 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    padding-left: 20px;
   }
 
   nav ul li{
     display: block;
     margin: 50px 0px;
-    margin-right: 35px;
-    line-height: 30px;
-    text-align: center;
+    padding-right: 500px;
+    line-height: 10px;
+    text-align: left;
+
   }
 
   nav ul li a{
-    font-size: 22px;
+    font-size: 18px;
   }
 
   nav ul li a:hover{
-    font-size: 22.5px;
+    font-size: 18.5px;
   }
 
   nav ul li a:active{
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #check:checked ~ ul{
@@ -160,7 +160,6 @@ nav ul li a:active{
   nav ul li{
     display: block;
     margin: 50px 0px;
-    margin-right: 35px;
     line-height: 30px;
     text-align: center;
   }
