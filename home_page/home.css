@@ -1,3 +1,4 @@
+
 *{
   padding: 0;
   margin: none;
@@ -24,8 +25,10 @@ body{
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 10px;
+  height: 10px;
   font-family: 'Montserrat';
-  height: 10px
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .search-container .input{
