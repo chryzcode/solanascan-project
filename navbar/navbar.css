@@ -15,6 +15,7 @@ nav{
   border: 1px solid #e78deb;
   height: 80px;
   width: 100%
+  font-family: 'Montserrat';
 }
 
 nav:after{
@@ -76,6 +77,7 @@ li a{
   color: black;
   font-size: 18px;
   border-radius: 5px
+
 }
 
 li a:hover{
