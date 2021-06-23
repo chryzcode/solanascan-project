@@ -24,14 +24,14 @@ nav:after{
 }
 
 img{
-  padding-left: 60px;
+  padding-left: 30px;
   line-height: 70px;
   float: left;
   padding-top: 19px;
 }
 
 .checkbtn{
-  font-size: 30px;
+  font-size: 25px;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -48,7 +48,7 @@ img{
   display: none;
   line-height: 80px;
   margin-right: 10px;
-  font-size: 30px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ img{
 
 nav ul{
   float: right;
-  padding-right: 60px;
+  padding-right: 30px;
 }
 
 nav ul li{
@@ -71,32 +71,74 @@ nav ul li{
   margin: 0 10px;
 }
 
-nav ul li a{
+li a{
   text-decoration: none;
   color: black;
   font-size: 18px;
   border-radius: 5px
 }
 
-nav ul li a:hover{
+li a:hover{
   color: #701822;
   font-size: 18.5px;
 }
 
-nav ul li a:active{
-  font-size: 19px;
+li a:active{
+  font-size: 18px;
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+  img{
+    padding-left: 40px;
+  }
+
+  nav ul{
+    padding-right: 40px;
+  }
+
+  nav ul li a{
+    font-size: 17px;
+  }
+
+  nav ul li a:hover{
+    font-size: 17.5px;
+  }
+
+  nav ul li a:active{
+    font-size: 17px;
+  }
+}
+
+@media all and (min-width: 621px) and (max-width: 768px){
+
+  img{
+    padding-left: 20px;
+  }
+
+  nav ul{
+    padding-right: 20px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  nav ul li a:hover{
+    font-size: 16.5px;
+  }
+
+  nav ul li a:active{
+    font-size: 16px;
+  }
+
 }
 
 
 
+@media all and (min-width: 300px) and (max-width: 620px){
 
-
-@media all and (min-width: 320px) and (max-width: 480px){
-
-  img{
-    padding-top: 25px;
-    padding-left: 1px;
-    width: 110px;
+  img{;
+    padding-left: 10px;
   }
 
   ul{
@@ -106,28 +148,29 @@ nav ul li a:active{
     background: white;
     top: 80px;
     left: -100%;
-    text-align: center;
+    text-align: left;
     transition: all .5s;
+    padding-left: 40px;
   }
 
   nav ul li{
     display: block;
     margin: 50px 0px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
   }
 
   nav ul li a{
-    font-size: 20px;
+    font-size: 15px;
 
   }
 
   nav ul li a:hover{
-    font-size: 20.5px;
+    font-size: 15.5px;
   }
 
   nav ul li a:active{
-    font-size: 20px;
+    font-size: 15px;
 
   }
 
