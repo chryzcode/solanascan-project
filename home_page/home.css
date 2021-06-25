@@ -30,13 +30,13 @@ body{
 }
 
 .search-container .input{
-  border: 1px solid #a440a8;;
+  border: 1px solid #a440a8;
   outline: none;
 }
 
 .search-wrap{
   width: 650px;
-  margin: 30px auto;
+  margin: 15px auto;
 
 }
 
@@ -190,6 +190,187 @@ button {
     position: relative;
     width: 400px;
     height: 55px;
+  }
+
+}
+
+
+
+
+nav{
+  background: white;
+  height: 80px;
+  width: 100%
+  font-family: 'Montserrat';
+  border-bottom: 1px solid #a440a8;
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+img{
+  padding-left: 30px;
+  line-height: 70px;
+  float: left;
+  padding-top: 33px;
+}
+
+.checkbtn{
+  font-size: 25px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+#check{
+  display: none;
+}
+
+
+#cross{
+  display: none;
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#check:checked + label i#bars{
+    display: none;
+  }
+
+#check:checked + label i#cross{
+    display: block;
+}
+
+nav ul{
+  float: right;
+  padding-right: 30px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  border-radius: 5px
+
+}
+
+li a:hover{
+  color: #701822;
+  font-size: 18.5px;
+}
+
+li a:active{
+  font-size: 18px;
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+  img{
+    padding-left: 40px;
+  }
+
+  nav ul{
+    padding-right: 40px;
+  }
+
+  nav ul li a{
+    font-size: 17px;
+  }
+
+  nav ul li a:hover{
+    font-size: 17.5px;
+  }
+
+  nav ul li a:active{
+    font-size: 17px;
+  }
+}
+
+@media all and (min-width: 621px) and (max-width: 768px){
+
+  img{
+    padding-left: 20px;
+  }
+
+  nav ul{
+    padding-right: 20px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  nav ul li a:hover{
+    font-size: 16.5px;
+  }
+
+  nav ul li a:active{
+    font-size: 16px;
+  }
+
+}
+
+
+
+@media all and (min-width: 300px) and (max-width: 620px){
+
+  search-container{
+
+  }
+  img{
+    padding-left: 10px;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 35px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+    padding-left: 30px;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 30px 0px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  nav ul li a{
+    font-size: 15px;
+
+  }
+
+  nav ul li a:hover{
+    font-size: 15.5px;
+  }
+
+  nav ul li a:active{
+    font-size: 15px;
+
+  }
+
+  .checkbtn{
+    display: block;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
   }
 
 }
