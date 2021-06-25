@@ -21,6 +21,7 @@ body{
   margin-right: 300px;
 }
 
+
 .search-bar{
   padding: 10px;
   font-size: 17px;
@@ -132,6 +133,7 @@ form.search::after {
   justify-content: center;
   display: flex;
   color: #737373;
+
 }
 
 .about-app:hover{
