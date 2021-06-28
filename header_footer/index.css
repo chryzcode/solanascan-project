@@ -195,15 +195,12 @@ button {
 
 }
 
-
-
-
 nav{
-  background: white;
   height: 80px;
   width: 100%
   font-family: 'Montserrat';
   border-bottom: 1px solid #a440a8;
+  z-index: 10;
 }
 
 nav:after{
@@ -327,9 +324,6 @@ li a:active{
 
 @media all and (min-width: 300px) and (max-width: 620px){
 
-  search-container{
-
-  }
   img{
     padding-left: 10px;
   }
@@ -342,6 +336,8 @@ li a:active{
     left: -100%;
     text-align: left;
     transition: all .5s;
+    background: red;
+
   }
 
   nav ul li{
@@ -367,6 +363,14 @@ li a:active{
 
   .checkbtn{
     display: block;
+  }
+
+  .search-wrap .search-box .input {
+    font-size: 15px;
+  }
+
+  .search-wrap .search-box .input:hover {
+    font-size: 15.5px;
   }
 
   #check:checked ~ ul{
