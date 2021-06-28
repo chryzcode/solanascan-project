@@ -1,7 +1,7 @@
 *{
   padding: none;
   margin: none;
-  font-family: serif monospace sans-serif;
+  font-family: 'Montserrat';
   box-sizing: border-box;
 }
 
@@ -84,7 +84,7 @@ form.search::after {
   padding: 15px ;
   border-radius: 10px;
   border: 2px solid #e78deb;
-  background: #f8f9fa;
+  background: #f0f0f0;
 }
 
 .d-apps-active:hover{
@@ -133,11 +133,12 @@ form.search::after {
   justify-content: center;
   display: flex;
   color: #737373;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 .about-app:hover{
-  font-size: 21px;
+  font-size: 20.5px;
   cursor: default;
 }
 
@@ -196,7 +197,7 @@ form.search::after {
   }
 
   .about-app:hover{
-    font-size: 18px;
+    font-size: 17.5px;
   }
 
 }
@@ -219,7 +220,6 @@ form.search::after {
     height: 230px;
   }
 
-
   .d-apps-active:hover{
     height: 240px;
   }
@@ -229,7 +229,7 @@ form.search::after {
   }
 
   .about-app:hover{
-    font-size: 18px;
+    font-size: 17.5px;
   }
 
 }
@@ -243,7 +243,7 @@ form.search::after {
 
   .d-apps-active:hover{
     height: 265px;
-    font-size: 17.6
+    font-size: 17.5
   }
 }
 
@@ -265,5 +265,34 @@ form.search::after {
   .d-apps-active:hover{
     height: 205px;
     padding: 13px;
+  }
+}
+
+@media only screen and  (max-width: 300px){
+
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .d-apps{
+    height: 300px;
+  }
+
+  .d-apps-active{
+    height: 200px;
+    padding: 13px;
+  }
+
+  .d-apps-active:hover{
+    height: 205px;
+    padding: 13px;
+  }
+
+  .about-app{
+    font-size: 14px;
+  }
+
+  .about-app:hover{
+    font-size: 14.5px;
   }
 }

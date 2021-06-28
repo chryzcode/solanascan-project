@@ -1,7 +1,7 @@
 *{
   padding: 0;
   margin: none;
-  font-family: serif monospace sans-serif;
+  font-family: 'Montserrat';
   box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ div .info{
   height: 10px;
   font-family: 'Montserrat';
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .search-container .input{
