@@ -46,6 +46,7 @@ div .info {
   z-index: -1000px;
 }
 
+
 .search-wrap .search-box .input {
   position: absolute;
   top: 0;
@@ -322,6 +323,9 @@ li a:active {
     top: 60px;
     left: -100%;
     text-align: left;
+    /* Change the black color */
+    background: #000;
+    z-index: 1000;
   }
 
   nav ul li {
