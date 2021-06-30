@@ -546,8 +546,9 @@ background: url(https://teenfinancialfreedom.com/wp-content/uploads/2020/03/Cryp
   }
 }
 
-@media (max-width:650px){
+@media (max-width:625px){
 
   footer .footer-container{
     grid-template-columns: repeat(1, 1fr);
   }
+}
