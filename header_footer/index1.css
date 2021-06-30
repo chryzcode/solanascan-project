@@ -17,6 +17,7 @@ box-sizing: border-box;
 	padding: 5px;
 	align-items: center;
 	display: flex;
+	transform: scale(1.2);
 }
 
 .checkbox {
@@ -40,12 +41,12 @@ box-sizing: border-box;
 }
 
 .fa-moon {
-	color: red;
+	color: #f1c40f;
 	font-size: 15px;
 }
 
 .fa-sun {
-	color: red;
+	color: #f39c12;
 	padding-left:10px;
 	font-size: 15px;
 }
@@ -57,10 +58,31 @@ justify-content: end;
 align-content: end;
 background-color: #fafafa;
 height: 100%;
+transition: background 0.2s linear;
 }
 
 body.dark {
 	background: #292C35;
+}
+
+body.dark li a{
+color: white;
+}
+
+body.dark .info{
+	color: white;
+}
+
+body.dark .footer-bottom p{
+	color: white;
+}
+
+body.dark .footer-bottom a{
+	color: white;
+}
+
+body.dark .company_sec p{
+	color: white;
 }
 
 body div .search-container{
@@ -397,6 +419,7 @@ background: white;
 z-index: 1000;
 transition: all .5s;
 opacity: 93%;
+margin-top: 0;
 }
 
 nav ul li{
