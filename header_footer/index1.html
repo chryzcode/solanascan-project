@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link id="mysytle" rel="stylesheet" href="index.css" type="text/css">
+    <link id="mysytle" rel="stylesheet" href="index1.css" type="text/css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav</title>
   </head>
@@ -28,10 +29,12 @@
     <div class="search-container">
       <div class="info">
         The Solana Blockchain Explorer
-        <label class="darkmode">
-          <input type="checkbox">
-          <span class="check"></span>
-        </label>
+        <input type="checkbox" class="checkbox" id="chk" />
+	       <label class="label" for="chk">
+		         <i class="fas fa-moon"></i>
+		         <i class="fas fa-sun"></i>
+		         <div class="ball"></div>
+	        </label>
       </div>
         <div class="search-wrap">
           <div class="search-box">

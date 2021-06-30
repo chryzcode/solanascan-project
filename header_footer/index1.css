@@ -5,72 +5,62 @@ font-family: 'Montserrat';
 box-sizing: border-box;
 }
 
-.darkmode{
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	justify-content: space-between;
+	position: relative;
+	height: 26px;
+	width: 50px;
   float: right;
-  display: flex;
-  padding-right: 50px;
+	margin-right: 40px;
+	padding: 5px;
+	align-items: center;
+	display: flex;
 }
 
-.darkmode input[type='checkbox']{
-  /*-webkit-appearance:none;
-  visibility: hidden;
-  display: none;*/
+.checkbox {
+	opacity: 0;
+	position: absolute;
 }
 
-.check{
-  position: relative;
-  display: block;
-  width: 70px;
-  height: 40px;
-  background: black;
-  cursor: pointer;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: ease-in 0.5s;
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transition: transform 0.2s linear;
 }
 
-.darkmode input[type='checkbox']:checked ~ .check{
-  background: white;
-  box-shadow: 0 0 0 2000px black;
+.checkbox:checked + .label .ball {
+	transform: translateX(22px);
 }
 
-.darkmode input[type='checkbox']:checked ~ .check::before{
-  transform: translateX(-50px);
-}
-.check::before{
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  background: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: 0.5s;
+.fa-moon {
+	color: red;
+	font-size: 15px;
 }
 
-.check::after{
-  content: '';
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  background: black;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: 0.5s;
-  transform: translateX(50px);
-}
-
-.darkmode input[type='checkbox']:checked ~ .check::after{
-  transform: translateX(0px);
+.fa-sun {
+	color: red;
+	padding-left:10px;
+	font-size: 15px;
 }
 
 body{
-margin: 0px;
+margin: 0;
 display: grid;
 justify-content: end;
 align-content: end;
+background-color: #fafafa;
+height: 100%;
+}
+
+body.dark {
+	background: #292C35;
 }
 
 body div .search-container{
