@@ -1,19 +1,69 @@
-*{
+* {
   padding: 0;
   margin: none;
   font-family: 'Montserrat';
   box-sizing: border-box;
 }
 
-body{
-  margin: 0px;
-  display: grid;
-  justify-content: end;
-  align-content: end;
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  justify-content: space-between;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  float: right;
+  margin-right: 40px;
+  padding: 5px;
+  align-items: center;
+  display: flex;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
 
-body div .search-container{
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(22px);
+}
+
+.fa-moon {
+  color: red;
+  font-size: 15px;
+}
+
+.fa-sun {
+  color: red;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  /* display: grid;
+  justify-content: end;
+  align-content: end; */
+  background-color: #fafafa;
+  height: 100%;
+}
+
+body.dark {
+  background: #292c35;
+}
+
+body div .search-container {
   height: 180px;
   width: 100%;
   opacity: 60%;
@@ -21,9 +71,9 @@ body div .search-container{
   border-bottom-right-radius: 20px;
 }
 
-div .info{
+div .info {
   font-size: 21px;
-  color: #000000;
+  color: black;
   padding-top: 25px;
   padding-left: 20px;
   padding-bottom: 50px;
@@ -33,24 +83,23 @@ div .info{
   font-weight: 600;
 }
 
-.search-container .input{
+.search-container .input {
   border: 1px solid #a440a8;
   outline: none;
 }
 
-.search-wrap{
+.search-wrap {
   width: 650px;
   margin: 15px auto;
-
 }
 
-.search-wrap .search-box{
+.search-wrap .search-box {
   position: relative;
   width: 650px;
   height: 70px;
 }
 
-.search-wrap .search-box .input{
+.search-wrap .search-box .input {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,16 +111,16 @@ div .info{
   padding-right: 80px;
 }
 
-.search-wrap .search-box .input:hover{
+.search-wrap .search-box .input:hover {
   font-size: 19px;
 }
 
-.search-wrap .search-box .input:active{
+.search-wrap .search-box .input:active {
   font-size: 18px;
 }
 
-form .search::after{
-  content: "";
+form .search::after {
+  content: '';
   clear: both;
   display: table;
 }
@@ -81,7 +130,7 @@ button {
   outline: none;
 }
 
-.search-wrap .search-box .btn{
+.search-wrap .search-box .btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -92,11 +141,11 @@ button {
   cursor: pointer;
 }
 
-.search-wrap .search-box .btn:hover{
+.search-wrap .search-box .btn:hover {
   background: #a33c49;
 }
 
-.search-wrap .search-box .btn.btn_common .fas{
+.search-wrap .search-box .btn.btn_common .fas {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,36 +155,34 @@ button {
   padding: 0;
 }
 
-.search-wrap .search-box .btn.btn_common .fas:hover{
+.search-wrap .search-box .btn.btn_common .fas:hover {
   font-size: 23px;
 }
 
-.search-wrap .search-box .btn.btn_common .fas:active{
+.search-wrap .search-box .btn.btn_common .fas:active {
   font-size: 21.5px;
 }
 
-.search-wrap .search-box .btn{
+.search-wrap .search-box .btn {
   right: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
-
-@media all and (min-width: 769px) and (max-width: 1024px){
-
-  .info{
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .info {
     font-size: 20px;
   }
 
-  .search-container{
+  .search-container {
     border-radius: 0;
   }
 
-  .search-wrap{
+  .search-wrap {
     width: 620px;
   }
 
-  .search-wrap .search-box{
+  .search-wrap .search-box {
     position: relative;
     width: 620px;
     height: 65px;
@@ -147,79 +194,76 @@ button {
     font-size: 16.5px;
   }
 
-  .search-wrap .search-box .input:hover{
+  .search-wrap .search-box .input:hover {
     font-size: 17px;
   }
 
-  .search-wrap .search-box .input:active{
+  .search-wrap .search-box .input:active {
     box-shadow: none;
     font-size: 16.5px;
   }
 }
 
 @media all and (min-width: 621px) and (max-width: 768px) {
-
-  .info{
+  .info {
     padding-left: 15px;
     font-size: 19px;
   }
 
-  .search-container{
+  .search-container {
     border-radius: 0;
   }
 
-  .search-wrap{
+  .search-wrap {
     width: 550px;
   }
 
-  .search-wrap .search-box{
+  .search-wrap .search-box {
     position: relative;
     width: 550px;
     height: 60px;
   }
 }
 
-@media all and (min-width: 300px) and (max-width: 620px){
-
-  .info{
+@media all and (min-width: 300px) and (max-width: 620px) {
+  .info {
     padding-left: 10px;
     font-size: 16px;
   }
 
-  .search-wrap{
+  .search-wrap {
     width: 400px;
   }
 
-  .search-wrap .search-box{
+  .search-wrap .search-box {
     position: relative;
     width: 400px;
     height: 55px;
   }
-
 }
 
-nav{
+nav {
   height: 80px;
-  width: 100%
+  width: 100%;
   font-family: 'Montserrat';
   border-bottom: 1px solid #a440a8;
   z-index: 10;
 }
 
-nav:after{
+nav:after {
   content: '';
   clear: both;
   display: table;
 }
 
-img{
+/* img {
   padding-left: 30px;
   line-height: 70px;
   float: left;
   padding-top: 33px;
-}
+} */
 
-.checkbtn{
+.checkbtn {
   font-size: 25px;
   float: right;
   line-height: 80px;
@@ -228,12 +272,18 @@ img{
   cursor: pointer;
 }
 
-#check{
+#check {
   display: none;
 }
 
+#bars {
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
 
-#cross{
+#cross {
   display: none;
   line-height: 80px;
   margin-right: 10px;
@@ -241,130 +291,128 @@ img{
   cursor: pointer;
 }
 
-#check:checked + label i#bars{
-    display: none;
-  }
-
-#check:checked + label i#cross{
-    display: block;
+#check:checked + label i#bars {
+  display: none;
 }
 
-nav ul{
+#check:checked + label i#cross {
+  display: block;
+}
+
+nav ul {
   float: right;
   padding-right: 30px;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 10px;
 }
 
-li a{
+li {
+  list-style: none;
+}
+
+li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
-li a:hover{
+li a:hover {
   color: #701822;
   font-size: 18.5px;
 }
 
-li a:active{
+li a:active {
   font-size: 18px;
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px){
-  img{
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  img {
     padding-left: 40px;
   }
 
-  nav ul{
+  nav ul {
     padding-right: 40px;
   }
 
-  nav ul li a{
+  nav ul li a {
     font-size: 17px;
   }
 
-  nav ul li a:hover{
+  nav ul li a:hover {
     font-size: 17.5px;
   }
 
-  nav ul li a:active{
+  nav ul li a:active {
     font-size: 17px;
   }
 }
 
-@media all and (min-width: 621px) and (max-width: 768px){
-
-  img{
+@media all and (min-width: 621px) and (max-width: 768px) {
+  img {
     padding-left: 20px;
   }
 
-  nav ul{
+  nav ul {
     padding-right: 20px;
   }
 
-  nav ul li a{
+  nav ul li a {
     font-size: 16px;
   }
 
-  nav ul li a:hover{
+  nav ul li a:hover {
     font-size: 16.5px;
   }
 
-  nav ul li a:active{
+  nav ul li a:active {
     font-size: 16px;
   }
-
 }
 
-
-
-@media all and (min-width: 300px) and (max-width: 620px){
-
-  img{
+@media all and (min-width: 300px) and (max-width: 620px) {
+  img {
     padding-left: 10px;
   }
 
-  ul{
-    position: fixed;
+  nav ul {
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    top: 40px;
+    height: 50vh;
+    top: 80px;
     left: -100%;
     text-align: left;
-    /* Change the black color */
-    background: #000;
+    background: white;
     z-index: 1000;
-    transition: all .5s;
+    transition: all 0.5s;
+    opacity: 93%;
   }
 
-  nav ul li{
+  nav ul li {
     display: block;
-    margin: 30px 0px;
+    margin: 25px 0px;
     line-height: 30px;
     text-align: left;
   }
 
-  nav ul li a{
+  nav ul li a {
     font-size: 15px;
     padding-left: 30px;
   }
 
-  nav ul li a:hover{
+  nav ul li a:hover {
     font-size: 15.5px;
   }
 
-  nav ul li a:active{
+  nav ul li a:active {
     font-size: 15px;
-
   }
 
-  .checkbtn{
+  .checkbtn {
     display: block;
   }
 
@@ -376,35 +424,44 @@ li a:active{
     font-size: 15.5px;
   }
 
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
 }
 
-footer{
-  border-top:  1px solid #a440a8;
+.content_wrapper {
+  width: 100%;
+  height: 1000px;
+  opacity: 30%;
+  background: url(https://teenfinancialfreedom.com/wp-content/uploads/2020/03/Cryptocurrency-for-Beginners.jpg);
+}
+
+/* footer {
+  border-top: 1px solid #a440a8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 250px;
-  padding: 50px 100px;
+  height: 380px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
 }
 
-footer .footer-container{
+footer .footer-container {
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   grid-gap: 20px;
 }
 
-footer .footer-container .list h2{
+footer .footer-container .list h2 {
   position: relative;
   font-weight: 600px;
   border-bottom: 15px;
 }
 
-footer .footer-container .list h2::before{
+footer .footer-container .list h2::before {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -414,31 +471,38 @@ footer .footer-container .list h2::before{
   background: #701822;
 }
 
-footer .footer-container .company_sec p{
-  margin-top: 70px;
+#company {
+  margin-top: 50px;
+  padding-right: 220px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+footer .footer-container .company_sec p {
+  margin-top: 30px;
   padding-left: 0;
-  padding-right: 270px;
+  padding-right: 240px;
   font-size: 15px;
 }
-.company_logo{
+.company_logo {
   width: 25%;
   padding-left: 10px;
   padding-top: 10px;
   font-weight: 500;
 }
 
-.socials{
+.socials {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 50px);
   grid-gap: 10px;
 }
 
-.socials li{
+.socials li {
   list-style: none;
 }
 
-.socials li a{
+.socials li a {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -450,7 +514,7 @@ footer .footer-container .company_sec p{
   border-radius: 4px;
 }
 
-.socials li a:hover{
+.socials li a:hover {
   background: #a33c49;
 }
 
@@ -459,46 +523,238 @@ footer .footer-container .company_sec p{
   font-size: 20px;
 }
 
-.socials li a .fa:hover{
+.socials li a .fa:hover {
   font-size: 22px;
 }
 
-.list{
+.list {
   position: relative;
 }
 
-.list li{
+.list li {
   list-style: none;
 }
 
-.list li a{
+.list li a {
   text-decoration: none;
   font-size: 13px;
   line-height: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-.list li a:hover{
+.list li a:hover {
   font-size: 14px;
 }
 
-.footer-bottom .fa{
+.footer-bottom .fa {
   color: red;
   font-size: 20px;
 }
-.footer-bottom{
+
+.footer-bottom {
   width: 100%;
   text-align: center;
   padding: 8px 100px;
+  margin-top: 25px;
 }
 
-.footer-bottom a{
+.footer-bottom a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 300;
 }
 
-.footer-bottom a:hover{
+.footer-bottom a:hover {
   color: #701822;
   font-size: 20.5px;
+}
+
+.content_wrapper {
+  width: 100%;
+  height: 1000px;
+  opacity: 30%;
+  background: url(https://teenfinancialfreedom.com/wp-content/uploads/2020/03/Cryptocurrency-for-Beginners.jpg);
+}
+
+@media (max-width: 950px) {
+  footer {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+	/*
+
+  footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+  }
+
+  footer .footer-container .company_sec p {
+    padding-right: 120px;
+  }
+
+  #company {
+    padding-right: 400px;
+    font-size: 18px;
+    font-weight: bold;
+  } 
+}
+
+@media (max-width: 625px) {
+  footer .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
+/* My styles */
+footer {
+  border-top: 1px solid #a440a8;
+  width: 100%;
+  /* height: 380px; */
+  padding: 40px;
+
+}
+
+footer .footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+footer .footer-container .list h2 {
+  position: relative;
+  font-weight: 600px;
+  border-bottom: 15px;
+}
+
+footer .footer-container .list h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #701822;
+}
+
+#company {
+  /* margin-top: 50px; */
+  /* padding-right: 220px; */
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+footer .footer-container .company_sec p {
+  /* margin-top: 30px; */
+  /* padding-left: 0; */
+  /* padding-right: 240px; */
+  font-size: 15px;
+}
+
+.company_logo {
+  display: block;
+  width: 100%;
+  max-width: 25%;
+  /* padding-left: 10px;
+  padding-top: 10px; */
+  font-weight: 500;
+}
+
+.socials {
+  display: block;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 10px;
+}
+
+.socials li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: #701822;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.socials li a:hover {
+  background: #a33c49;
+}
+
+.socials li a .fa {
+  color: white;
+  font-size: 20px;
+}
+
+.socials li a .fa:hover {
+  font-size: 22px;
+}
+
+.list {
+  position: relative;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.list li a:hover {
+  font-size: 14px;
+}
+
+.footer-bottom .fa {
+  color: red;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  /* padding: 8px 100px; */
+  margin-top: 25px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer-bottom a:hover {
+  color: #701822;
+  font-size: 20.5px;
+}
+
+@media (min-width: 625px) {
+  footer .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+	#company {
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 950px) {
+  #company {
+    /* padding-right: 400px; */
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
