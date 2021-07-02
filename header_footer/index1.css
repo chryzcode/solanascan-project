@@ -25,6 +25,11 @@
 	position: absolute;
 }
 
+.company_logo {
+  width: 10%;
+  padding-left: 0;
+}
+
 .label .ball {
 	background-color: #fff;
 	border-radius: 50%;
@@ -686,13 +691,6 @@ footer .footer-container .company_sec p {
   font-size: 15px;
 }
 
-.company_logo {
-  display: block;
-  max-width: 50%;
-  min-width: 50%;
-  font-weight: 500;
-}
-
 .socials {
   display: block;
   margin-top: 20px;
@@ -776,6 +774,9 @@ footer .footer-container .company_sec p {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .label{
+    margin-left: 10px;
+  }
 	#company {
 		padding-right: 0;
 	}
