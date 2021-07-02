@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link id="mysytle" rel="stylesheet" href="index.css" type="text/css">
+    <link id="mysytle" rel="stylesheet" href="index1.css" type="text/css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,10 +28,14 @@
     <div class="search-container">
       <div class="info">
         The Solana Blockchain Explorer
-        <label class="darkmode">
-          <input type="checkbox">
-          <span class="check"></span>
-        </label>
+        <span class="darkmode">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </span>
       </div>
         <div class="search-wrap">
           <div class="search-box">
@@ -86,5 +90,11 @@
             Mortal Web Services</a> | <a href="https://solanascan.io/address/37v7Cd3nznqns1pXKhNjKyhHKwydRovh3xjyrTWfdJqs">Donate<i class="fa fa-heart"></i></a></p>
         </div>
       </footer>
+      <script>
+        const chk = document.getElementById('chk');
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+      });
+      </script>
   </body>
 </html>
