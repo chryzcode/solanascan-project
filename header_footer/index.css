@@ -413,9 +413,6 @@ img{
 padding-left: 10px;
 }
 
-ul.dark {
-	background: #292C35;
-}
 
 ul{
 position: absolute;
@@ -430,6 +427,8 @@ transition: all .5s;
 opacity: 93%;
 margin-top: 0;
 }
+
+
 
 nav ul li{
 display: block;

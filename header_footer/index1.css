@@ -13,7 +13,7 @@
   height: 26px;
   width: 50px;
   float: right;
-  margin-right: 40px;
+  margin-right: -340px;
   padding: 5px;
   align-items: center;
   display: flex;
@@ -81,6 +81,11 @@ body.dark .footer-bottom a{
 
 body.dark .company_sec p{
 	color: white;
+}
+
+.site_logo{
+  padding-left: 30px;
+  margin-top: 35px;
 }
 
 body div .search-container {
@@ -403,13 +408,18 @@ li a:active {
     position: absolute;
     width: 100%;
     height: 50vh;
-    top: 80px;
+    top: 65px;
     left: -100%;
     text-align: left;
     background: white;
     z-index: 1000;
     transition: all 0.5s;
     opacity: 93%;
+    padding-right: 0;
+  }
+
+  body.dark ul{
+    background: #292C35;
   }
 
   nav ul li {
@@ -639,6 +649,7 @@ footer {
 }
 
 footer .footer-container {
+  margin-top: 15px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -677,10 +688,8 @@ footer .footer-container .company_sec p {
 
 .company_logo {
   display: block;
-  width: 100%;
-  max-width: 25%;
-  /* padding-left: 10px;
-  padding-top: 10px; */
+  max-width: 50%;
+  min-width: 50%;
   font-weight: 500;
 }
 
@@ -719,6 +728,7 @@ footer .footer-container .company_sec p {
 
 .list {
   position: relative;
+  padding-left: 150px;
 }
 
 .list li {
