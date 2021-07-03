@@ -88,6 +88,14 @@ body.dark .company_sec p{
 	color: white;
 }
 
+body.dark label .fa{
+  color: white;
+}
+
+body.dark label #bars{
+  color: white;
+}
+
 .site_logo{
   padding-left: 30px;
   margin-top: 35px;
