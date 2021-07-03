@@ -306,6 +306,26 @@ button {
   }
 }
 
+@media all and (max-width: 450px){
+  div .info {
+    font-size: 14px;
+  }
+
+  .label {
+    margin-right: 50px;
+    top: -5px;
+  }
+
+  .search-wrap {
+    width: 300px;
+  }
+
+  .search-wrap .search-box {
+    width: 300px;
+  }
+
+}
+
 nav {
   height: 80px;
   width: 100%;
