@@ -200,12 +200,11 @@ button {
 }
 
 @media all and (min-width: 769px) and (max-width: 1024px) {
-  .info {
+  div .info {
     font-size: 20px;
   }
 
   .label {
-    float: right;
     margin-right: -300px;
   }
 
@@ -240,9 +239,13 @@ button {
 }
 
 @media all and (min-width: 621px) and (max-width: 768px) {
-  .info {
-    padding-left: 15px;
-    font-size: 19px;
+  div .info {
+    font-size: 18px;
+  }
+
+  .label {
+    margin-right: 50px;
+    top: -25px;
   }
 
   .search-container {
@@ -261,9 +264,13 @@ button {
 }
 
 @media all and (min-width: 300px) and (max-width: 620px) {
-  .info {
-    padding-left: 10px;
+  div .info {
     font-size: 16px;
+  }
+
+  .label {
+    margin-right: 50px;
+    top: -5px;
   }
 
   .search-wrap {
@@ -274,6 +281,10 @@ button {
     position: relative;
     width: 400px;
     height: 55px;
+  }
+
+  footer{
+    padding: 0;
   }
 }
 
@@ -358,7 +369,25 @@ li a:active {
   font-size: 18px;
 }
 
+footer .footer-container .company_sec p{
+line-height: 30px;
+font-size: 19px;
+font-weight: 150;
+padding-left: 10px;
+padding-right: 50px;
+}
+
+
 @media all and (min-width: 769px) and (max-width: 1024px) {
+
+  footer .footer-container .company_sec p{
+  line-height: 30px;
+  font-size: 19px;
+  font-weight: 150;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
   img {
     padding-left: 40px;
   }
@@ -381,6 +410,19 @@ li a:active {
 }
 
 @media all and (min-width: 621px) and (max-width: 768px) {
+  footer .footer-container .company_sec p{
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 150;
+  padding-left: 10px;
+  padding-right: 200px;
+}
+
+ div .list{
+  margin-left: auto;
+  margin-right: auto;
+}
+
   img {
     padding-left: 20px;
   }
@@ -406,6 +448,12 @@ li a:active {
   img {
     padding-left: 10px;
   }
+
+  div .list{
+   margin-left: auto;
+   margin-right: auto;
+ }
+
 
   nav ul {
     position: absolute;
@@ -509,10 +557,6 @@ footer .footer-container .list h2::before {
   font-weight: bolder;
 }
 
-footer .footer-container .company_sec p {
-  font-size: 15px;
-}
-
 .socials {
   display: block;
   margin-top: 20px;
@@ -545,8 +589,6 @@ footer .footer-container .company_sec p {
 .socials li a .fa:hover {
   font-size: 22px;
 }
-
-
 
 .list li {
   list-style: none;
@@ -602,10 +644,6 @@ body.dark .list li a:hover {
     width: 350px;
   }
 
-  .all_list{
-    margin-left: 200px;
-  }
-
   .label{
     margin-left: 10px;
   }
@@ -614,11 +652,11 @@ body.dark .list li a:hover {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   footer .footer-container .company_sec p{
-  padding-right: 300px;
   line-height: 30px;
   font-size: 18px;
+  padding-left: 10px;
 }
 
 .all_list{
