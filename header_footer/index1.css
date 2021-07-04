@@ -203,7 +203,7 @@ button {
 }
 
 .company_logo {
-  width: 10%;
+  width: 70px;
   padding-left: 0;
 }
 
@@ -409,10 +409,9 @@ li a:active {
 
 footer .footer-container .company_sec p{
 line-height: 30px;
-font-size: 19px;
+font-size: 21px;
 font-weight: 150;
 padding-left: 10px;
-padding-right: 50px;
 }
 
 
@@ -565,7 +564,6 @@ footer {
 }
 
 footer .footer-container {
-  margin-top: 15px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -706,7 +704,8 @@ footer .footer-container {
 @media (min-width: 950px) {
   #company {
     /* padding-right: 400px; */
-    font-size: 18px;
+    margin-top: 0;
+    font-size: 30px;
     font-weight: bold;
   }
 }
