@@ -147,11 +147,7 @@ form.search::after {
   border: none;
 }
 
-.img:hover{
-  height: 100%;
-  width: 100%;
-  cursor: default;
-}
+
 
 @media only screen and  (max-width: 1080px){
 
