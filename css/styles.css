@@ -91,6 +91,25 @@ body.dark label #bars{
   color: white;
 }
 
+body.dark footer{
+  border-top: 0;
+}
+
+body.dark .d-apps-active{
+  background: #292C35;
+}
+
+body.dark .about-app{
+  color: white;
+}
+body.dark .app-logo a{
+  color: white;
+}
+
+body.dark .app-logo a:hover{
+  color: #e78deb;
+}
+
 .site_logo{
   padding-left: 30px;
   margin-top: 35px;
@@ -645,6 +664,14 @@ footer .footer-container .list h2::before {
 
 body.dark .list li a:hover {
   color: white;
+}
+
+body.dark .app-section{
+  color: white;
+}
+
+body.dark .all{
+  background: #3e4355;
 }
 
 .footer-bottom .fa {
