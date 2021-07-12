@@ -120,7 +120,7 @@ form.search::after {
 }
 
 .app-logo a:hover{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 100;
   color: #e78deb;
 }
@@ -143,17 +143,11 @@ form.search::after {
 }
 
 .img{
-  height: 90%;
-  width: 90%;
   outline: none;
   border: none;
 }
 
-.img:hover{
-  height: 100%;
-  width: 100%;
-  cursor: default;
-}
+
 
 @media only screen and  (max-width: 1080px){
 
