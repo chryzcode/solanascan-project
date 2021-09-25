@@ -1,0 +1,292 @@
+*{
+  padding: none;
+  margin: none;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+
+body{
+  background: white ;
+}
+
+.all{
+  background: #f1f1f1;;
+}
+
+.search{
+  margin-left: 330px;
+  margin-top: 50px;
+  outline: none;
+  border-radius:4px;
+  margin-right: 300px;
+}
+
+
+.search-bar{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #e78deb;
+  outline: none;
+  float: left;
+  width:600px;
+  height: 45px;
+  font-size: 17px;
+  border-radius:20px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+button:hover{
+  box-shadow: 1px 1px 0.5px grey;
+  font-size: 18px;
+}
+
+button:active{
+  box-shadow: none;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.none{
+  border: none;
+  padding: none;
+  margin: none;
+  background: white;
+}
+
+.app-section{
+  margin-left: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #383838;
+}
+
+.wrapper{
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 98%;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  border-radius: 15px;
+}
+
+.d-apps-active{
+  height: 200px;
+  padding: 15px ;
+  border-radius: 10px;
+  border: 2px solid #e78deb;
+  background: #f0f0f0;
+}
+
+.d-apps-active:hover{
+  background: white;
+  height: 215px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #b58ebf,
+              0 0 5px #e8e8e8;
+}
+
+.d-apps-active:active{
+  background: white;
+  box-shadow: none;
+}
+
+.app-logo{
+
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-down: 400px;
+  border-bottom: 200px;
+  border-style: none;
+  font-family: serif sans-serif;
+}
+
+.app-logo a{
+  text-decoration: none;
+  font-size: 24px;
+  color: #454545;
+  padding: 17px;
+  padding-left: 14px;
+}
+
+.app-logo a:hover{
+  font-size: 25px;
+  font-weight: 100;
+  color: #e78deb;
+}
+
+
+.about-app{
+  font-size: 20px;
+  margin: 13px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #737373;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.about-app:hover{
+  font-size: 20.5px;
+  cursor: default;
+}
+
+.img{
+  outline: none;
+  border: none;
+}
+
+
+
+@media only screen and  (max-width: 1080px){
+
+
+  .about-app{
+    font-size: 18px;
+  }
+
+  .about-app:hover{
+    font-size: 18.5px;
+  }
+}
+
+@media only screen and  (max-width: 985px){
+
+  .wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .d-apps-active{
+    height: 210px;
+  }
+
+  .d-apps-active:hover{
+    height: 215px;
+  }
+
+  .about-app{
+    font-size: 18.5px;
+  }
+
+  .about-app:hover{
+    font-size: 19px;
+  }
+}
+
+@media only screen and  (max-width: 780px){
+
+  .about-app{
+    font-size: 17px;
+  }
+
+  .about-app:hover{
+    font-size: 17.5px;
+  }
+
+}
+
+@media only screen and  (max-width: 740px){
+
+  .about-app{
+    font-size: 17px;
+  }
+
+  .about-app:hover{
+    font-size: 17.7px;
+  }
+
+}
+
+@media only screen and  (max-width: 700px){
+
+  .d-apps-active{
+    height: 230px;
+  }
+
+  .d-apps-active:hover{
+    height: 240px;
+  }
+
+  .about-app{
+    font-size: 17px;
+  }
+
+  .about-app:hover{
+    font-size: 17.5px;
+  }
+
+}
+
+@media only screen and  (max-width: 590px){
+
+  .d-apps-active{
+    height: 250px;
+  }
+
+
+  .d-apps-active:hover{
+    height: 265px;
+    font-size: 17.5
+  }
+}
+
+@media only screen and  (max-width: 550px){
+
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .d-apps{
+    height: 300px;
+  }
+
+  .d-apps-active{
+    height: 200px;
+    padding: 13px;
+  }
+
+  .d-apps-active:hover{
+    height: 205px;
+    padding: 13px;
+  }
+}
+
+@media only screen and  (max-width: 300px){
+
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .d-apps{
+    height: 300px;
+  }
+
+  .d-apps-active{
+    height: 200px;
+    padding: 13px;
+  }
+
+  .d-apps-active:hover{
+    height: 205px;
+    padding: 13px;
+  }
+
+  .about-app{
+    font-size: 14px;
+  }
+
+  .about-app:hover{
+    font-size: 14.5px;
+  }
+}
