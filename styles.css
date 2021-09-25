@@ -150,7 +150,7 @@ body div .search-container {
 
 div .info {
   font-size: 21px;
-  color: white;
+  color: #333;
   padding-top: 25px;
   padding-left: 20px;
   padding-bottom: 50px;
@@ -637,6 +637,7 @@ footer .footer-container .list h2:before {
   /* padding-right: 220px; */
   font-size: 25px;
   font-weight: bolder;
+  color: #333;
 }
 
 .socials {
@@ -682,7 +683,7 @@ footer .footer-container .list h2:before {
   line-height: 30px;
   margin-bottom: 10px;
   display: inline-block;
-  color: white;
+  color: #333;
 }
 
 .list li a:hover {
@@ -715,7 +716,7 @@ body.dark .all{
 
 .footer-bottom a {
   text-decoration: none;
-  color: white;
+  color: #333;
   font-size: 20px;
   font-weight: 300;
 }
